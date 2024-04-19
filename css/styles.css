@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+/* Blocked Classes */
+.mobile-only, ul.menu-items {
+    display: none;
+}
+
+/* Font Classes */
+.font-samsung-sans {
+    font-family: 'Samsung Sans', sans-serif;                                       
+}
+.font-samsung-sharp {
+    font-family: 'Samsung Sharp Sans', sans-serif;
+}
+
+/* Generic Classes */
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+/* NAVIGATION BAR STYLES */
+nav {
+    height: 100px;
+    padding: 0 100px;
+}
+nav ul li {
+    margin-right: 10px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* HERO STYLES */
+.hero {
+    width: calc(90dvw - 100px);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-item {
+    flex: 0 0 auto;
+    width: calc(100% - 200px);
+    height: 530px;
+    align-items: center;
+    padding: 0 100px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+.current-slide {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}
+div.carousel-item h2, div.carousel-item p, div.hero-buttons{
+    width: 500px;
+}
+div.carousel-item h2 {
+    font-weight: 700;
+    font-size: clamp(25px, 2.5vw, 2vw); 
+}
+div.carousel-item p {
+    margin: 20px 0; 
+}
+div.hero-buttons a {
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+div.carousel-item div.hero-buttons a.black {
+    background-color: #000000;
+    color: #f2f2f2;
+}
+div.carousel-1 {
+    background-image: url("../assets/backgrounds/background-couresel-1.png");
+    color: #f2f2f2;
+}
+div.carousel-1 div.hero-buttons a:first-child, div.carousel-6 div.hero-buttons a:first-child {
+    color: #f2f2f2;
+    text-decoration: solid #f2f2f2 underline 2px;
+}
+div.carousel-1 div.hero-buttons a:last-child {
+    background-color: #f2f2f2;
+    color: #000000;
+}
+div.carousel-2 {
+    background-image: url("../assets/backgrounds/background-couresel-2.png");
+}
+div.carousel-3 {
+    background-image: url("../assets/backgrounds/background-couresel-3.png");
+}
+div.carousel-4 {
+    background-image: url("../assets/backgrounds/background-couresel-4.png");
+}
+div.carousel-5 {
+    background-image: url("../assets/backgrounds/background-couresel-5.png");
+}
+div.carousel-6 {
+    background-image: url("../assets/backgrounds/background-couresel-6.png");
+    color: #f2f2f2;
+}
+div.carousel-5 div.hero-buttons a:first-child {
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-color: #000000;
+}
+.toggle-btn {
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 1.5vw;
+    background-color: gray;
+    color: #f2f2f2;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.toggle-btn#prev-btn {
+    left: 20px;
+}
+.toggle-btn#next-btn {
+    right: 20px;
+}

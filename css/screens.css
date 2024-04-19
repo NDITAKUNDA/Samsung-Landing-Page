@@ -1,0 +1,26 @@
+/* This is the stysheet for smaller latop sizes and larger ones */
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    /* NAVIGATION BAR STYLES */
+    nav, .hero {
+        padding: 0 20px;
+    }
+    nav ul:nth-child(3) {
+        display: none;
+    }
+    /* HERO STYLES */
+    .hero {
+        width: calc(90dvw);
+    }
+    .carousel-item {
+        width: calc(100%);
+        padding: 0 50px;
+    }
+}
+
+/* Stylesheet for larger screens */
+@media screen and (min-width: 1600px) {
+    nav, .hero  {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}

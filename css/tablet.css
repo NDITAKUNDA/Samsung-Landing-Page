@@ -1,0 +1,60 @@
+/* Stylesheet for the table view */
+@media (max-width: 1023px) {
+    /* Navigation Bar Styles */
+    nav {
+        padding: 0 20px;
+    }
+    nav.flex ul {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+    nav button {
+        background-color: transparent;
+    }
+    nav button img {
+        width: 60px;
+        height: 80px;
+    }
+    nav ul.menu-items.active {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        z-index: 2;
+        background-color: #f2f2f2;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100dvw;
+        height: calc(100dvh - 100px);
+    }
+    nav ul.menu-items.inactive {
+        left: -100dvw;
+    }
+    nav ul.menu-items li {
+        margin: 0;
+        margin-left: 40px;
+    }
+    nav ul.menu-items li img {
+        margin-right: 20px;
+    }
+    /* HERO Styles */
+    .hero {
+        width: 95dvw;
+    }
+    .carousel-item {
+        width: 100%;
+        height: 60dvh;
+        padding: 0 40px;
+    }
+    .toggle-btn {
+        top: 40%;
+    }
+    .toggle-btn#prev-btn {
+        left: 10px;
+    }
+    .toggle-btn#next-btn {
+        right: 10px;
+    }
+}

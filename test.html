@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horizontal Carousel</title>
+<style>
+  .carousel-container {
+    width: 80%; /* Adjust width as needed */
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 100%; /* Adjust width as needed */
+  }
+</style>
+</head>
+<body>
+
+<div class="carousel-container">
+  <div class="carousel-track">
+    <div class="carousel-item current-slide" style="background-color: #ff9999;">Slide 1</div>
+    <div class="carousel-item" style="background-color: #99ff99;">Slide 2</div>
+    <div class="carousel-item" style="background-color: #9999ff;">Slide 3</div>
+    <div class="carousel-item" style="background-color: #ffff99;">Slide 4</div>
+  </div>
+</div>
+
+<script>
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const slideWidth = slides[0].getBoundingClientRect().width;
+
+  // Arrange slides horizontally
+  const setSlidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + 'px';
+  };
+  slides.forEach(setSlidePosition);
+
+  // Next and previous buttons
+  const nextButton = document.createElement('button');
+  nextButton.textContent = 'Next';
+  nextButton.addEventListener('click', () => {
+    const currentSlide = track.querySelector('.current-slide');
+    const nextSlide = currentSlide.nextElementSibling;
+    const amountToMove = nextSlide.style.left;
+    track.style.transform = 'translateX(-' + amountToMove + ')';
+    currentSlide.classList.remove('current-slide');
+    nextSlide.classList.add('current-slide');
+  });
+
+  const prevButton = document.createElement('button');
+  prevButton.textContent = 'Prev';
+  prevButton.addEventListener('click', () => {
+    const currentSlide = track.querySelector('.current-slide');
+    const prevSlide = currentSlide.previousElementSibling;
+    const amountToMove = prevSlide.style.left;
+    track.style.transform = 'translateX(-' + amountToMove + ')';
+    currentSlide.classList.remove('current-slide');
+    prevSlide.classList.add('current-slide');
+  });
+
+  // Append buttons to the carousel container
+  const carouselContainer = document.querySelector('.carousel-container');
+  carouselContainer.appendChild(nextButton);
+  carouselContainer.appendChild(prevButton);
+
+</script>
+
+</body>
+</html>
+

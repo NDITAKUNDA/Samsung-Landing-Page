@@ -1,0 +1,25 @@
+/* Stylesheet for mobile view */
+@media (max-width: 500px) {
+    /* HERO Styles */
+    .carousel-item {
+        height: calc(100dvh - 120px);
+        padding: 0 40px;
+    }
+    div.carousel-item h2, div.carousel-item p, div.hero-buttons{
+        width: 350px;
+    }
+    .toggle-btn {
+        top: 50%;
+    }
+}
+
+/* For smaller Screens */
+@media (max-width: 400px) {
+    /* HERO Styles */
+    .carousel-item {
+        padding: 0 30px;
+    }
+    div.carousel-item h2, div.carousel-item p, div.hero-buttons{
+        width: 280px;
+    }
+}
