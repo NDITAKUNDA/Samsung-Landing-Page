@@ -36,6 +36,12 @@
 .space-between {
     justify-content: space-between;
 }
+section{
+    position: absolute;
+    padding: 6vw 0px;
+}
+
+
 
 /* NAVIGATION BAR STYLES */
 nav {
@@ -140,4 +146,43 @@ div.carousel-5 div.hero-buttons a:first-child {
 }
 .toggle-btn#next-btn {
     right: 20px;
+}
+/*PRODUCTS SECTION*/
+#products-section-tittle{
+    padding: 2vw 0vw;
+}
+.products-section{
+   width: calc(90dvw );
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.font-sizing{
+    font-size:38px;
+    line-height: 45.6px;
+    position: relative;
+    left: 20%;
+}
+.text-positioning{
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    left: 15%;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-gap: 5px;
+}
+.box{
+    padding: 0px;
+    margin: 20px;  
+}
+.products-section-img{
+    max-width: 100%;
+    height: auto;
+}
+.lol:hover{
+    text-decoration: underline;
+    text-decoration-thickness:2px ;
 }
