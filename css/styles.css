@@ -36,12 +36,23 @@
 .space-between {
     justify-content: space-between;
 }
-section{
-    position: absolute;
-    padding: 6vw 0px;
+.space-evenly {
+    justify-content: space-evenly;
 }
-
-
+.underlined {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+.title-big {
+    font-weight: 700;
+    font-size: clamp(30px, 2.5vw, 2vw);
+    margin-bottom: 20px;
+}
+.bg-cover {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* NAVIGATION BAR STYLES */
 nav {
@@ -56,8 +67,10 @@ nav ul li {
 
 /* HERO STYLES */
 .hero {
-    width: calc(90dvw - 100px);
+    width: calc(100dvw - 200px);
+    height: calc(100dvh - 150px);
     margin: 0 auto;
+    padding: 0;
     overflow: hidden;
     position: relative;
 }
@@ -67,9 +80,6 @@ nav ul li {
     height: 530px;
     align-items: center;
     padding: 0 100px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: none;
     transition: all 0.5s ease-in-out;
 }
@@ -147,12 +157,13 @@ div.carousel-5 div.hero-buttons a:first-child {
 .toggle-btn#next-btn {
     right: 20px;
 }
+
 /*PRODUCTS SECTION*/
 #products-section-tittle{
     padding: 2vw 0vw;
 }
 .products-section{
-   width: calc(90dvw );
+    width: calc(90dvw );
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -161,20 +172,14 @@ div.carousel-5 div.hero-buttons a:first-child {
     font-size:38px;
     line-height: 45.6px;
     position: relative;
-    left: 20%;
-}
-.text-positioning{
-    font-size: 18px;
-    line-height: 24px;
-    position: relative;
-    left: 15%;
+    text-align: center;
 }
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
     grid-gap: 5px;
 }
-.box{
+.box {
     padding: 0px;
     margin: 20px;  
 }
@@ -185,4 +190,35 @@ div.carousel-5 div.hero-buttons a:first-child {
 .underline:hover{
     text-decoration: underline;
     text-decoration-thickness:2px ;
+}
+
+/* Mobile & Computing Section */
+.mobile-computing {
+    padding: 40px 100px;
+    text-align: center;
+}
+.mobile-computing .mobile-image {
+    width: 90%;
+    height: 400px;
+    margin: 10px auto;
+    background-size: contain;
+    background-image: url("../assets/backgrounds/mobile.png");
+}
+.mobile-computing .mobile-buttons {
+    margin-top: 15px;
+}
+.mobile-computing .mobile-buttons a {
+    margin: 15px;
+    padding: 10px 20px;
+}
+.mobile-computing .mobile-buttons a.learn-more-btn {
+    color: #000000;
+    padding-bottom: 4px;
+    border-bottom-width: 50%;
+    border-bottom: 2px solid #000000;
+}
+.mobile-computing .mobile-buttons a.buy-btn {
+    background-color: #000000;
+    color: #f2f2f2;
+    border-radius: 50px;
 }

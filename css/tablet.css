@@ -57,4 +57,20 @@
     .toggle-btn#next-btn {
         right: 10px;
     }
+
+    /* Products Section */
+    .container {
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    }
+    .box {
+        margin: 10px;  
+    }
+    .products-section .underline {
+        font-size: 15px;
+    }
+
+    /* Mobile & Computing Section  */
+    .mobile-computing {
+        padding: 40px 40px;
+    }
 }

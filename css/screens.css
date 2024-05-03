@@ -19,8 +19,14 @@
 
 /* Stylesheet for larger screens */
 @media screen and (min-width: 1600px) {
-    nav, .hero  {
+    nav, .hero, .products-section, .mobile-computing  {
         max-width: 1440px;
         margin: 0 auto;
+    }
+    .hero {
+        height: 700px;
+    }
+    .carousel-item {
+        height: 700px;
     }
 }
