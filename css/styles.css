@@ -182,7 +182,7 @@ div.carousel-5 div.hero-buttons a:first-child {
     max-width: 100%;
     height: auto;
 }
-.lol:hover{
+.underline:hover{
     text-decoration: underline;
     text-decoration-thickness:2px ;
 }
