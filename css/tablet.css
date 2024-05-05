@@ -70,7 +70,7 @@
     }
 
     /* Mobile & Computing Section  */
-    .mobile-computing {
+    .mobile-computing, .home-appliances {
         padding: 40px 40px;
     }
 }
