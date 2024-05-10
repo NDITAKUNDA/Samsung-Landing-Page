@@ -262,3 +262,19 @@ div.carousel-5 div.hero-buttons a:first-child {
     background-size: contain;
     background-image: url("../assets/backgrounds/homeappliances.png");
 }   
+/*sustainability*/
+.sustainability{
+    padding: 40px 100px
+}
+.sustainability-image{
+    width: 90%;
+    height: 400px;
+    background-image: url("../assets/backgrounds/sustainability.png");
+    background-size: contain;
+    margin: 10px auto;
+    
+}
+a.learn-more-btn{
+    color: black;
+}
+
