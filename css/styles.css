@@ -261,9 +261,10 @@ div.carousel-5 div.hero-buttons a:first-child {
     margin: 10px auto;
     background-size: contain;
     background-image: url("../assets/backgrounds/homeappliances.png");
-}   
+}  
+
 /*sustainability*/
-.sustainability{
+.sustainability {
     padding: 40px 100px
 }
 .sustainability-image{
@@ -278,3 +279,20 @@ a.learn-more-btn{
     color: black;
 }
 
+/* Never Miss a thing */
+.never-miss-a-thing {
+    padding: 40px 100px;
+}
+.never-miss-a-thing .buy-button {
+    margin-left: 0;
+}
+.never-miss-image {
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-image: url("../assets/backgrounds/never-miss-a-thing.png");
+} 
+.never-miss-a-thing h2:last-child {
+    margin-top: 8px;
+    text-align: center;
+}
