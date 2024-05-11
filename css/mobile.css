@@ -39,10 +39,10 @@
     }
 
     /* Mobile & Computing, TV and Audio, Home APPliance Section sustainability */
-    .mobile-computing, .tv-and-audio, .home-appliances, .sustainability{
+    .mobile-computing, .tv-and-audio, .home-appliances, .sustainability, .creator-collective{
         padding: 40px;
     }
-    .mobile-image, .tv-and-audio-image, .home-appliances-image, .sustainability-image {
+    .mobile-image, .tv-and-audio-image, .home-appliances-image, .sustainability-image, .creator-collectve-image{
         width: 100%;
         height:200px;
         background-size: cover;

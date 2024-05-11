@@ -296,3 +296,14 @@ a.learn-more-btn{
     margin-top: 8px;
     text-align: center;
 }
+/*collector creative*/
+.creator-collective{
+    padding: 40px 100px;
+}
+.creator-collectve-image{
+    aspect-ratio: 1/1;
+    background-image: url("../assets/backgrounds/creator-collective.png");
+    background-size: contain;
+    margin: 10px auto;
+}
+
