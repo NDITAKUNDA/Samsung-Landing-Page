@@ -4,7 +4,7 @@
     nav, .hero {
         padding: 0 20px;
     }
-    nav ul:nth-child(3) {
+    nav ul:nth-child(3), .policies {
         display: none;
     }
     /* HERO STYLES */
@@ -15,11 +15,19 @@
         width: calc(100%);
         padding: 0 50px;
     }
+    .creator-collective, footer {
+        padding: 40px;
+    }
+    .creator-collective-image {
+        width: 90dvw;
+        background-size: contain;
+    }
 }
+
 
 /* Stylesheet for larger screens */
 @media screen and (min-width: 1600px) {
-    nav, .hero, .products-section, .mobile-computing, .tv-and-audio, .sustainability, .home-appliances, .never-miss-a-thing, .creator-collective {
+    nav, .hero, .products-section, .mobile-computing, .tv-and-audio, .sustainability, .home-appliances, .never-miss-a-thing, .creator-collective, .something-new, footer {
         max-width: 1440px;
         margin: 0 auto;
     }

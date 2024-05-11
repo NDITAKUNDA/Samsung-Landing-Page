@@ -296,14 +296,72 @@ a.learn-more-btn{
     margin-top: 8px;
     text-align: center;
 }
-/*collector creative*/
-.creator-collective{
-    padding: 40px 100px;
+
+/* Collector Creative */
+.creator-collective {
+    padding: 0px 100px;
 }
-.creator-collectve-image{
-    aspect-ratio: 1/1;
+.creator-collective-image {
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
     background-image: url("../assets/backgrounds/creator-collective.png");
     background-size: contain;
-    margin: 10px auto;
 }
 
+/* Something New Styles */
+.something-new {
+    padding: 40px 100px;
+}
+.something-new h2 {
+    text-align: center;
+}
+.something-new input {
+    margin: 15px auto;
+    padding: 20px 50px;
+    border-radius: 50px;
+    width: 300px;
+    display: block;
+    outline: 1px solid #333;
+}
+.something-new .keywords {
+    width: 480px;
+    margin: 0 auto;
+}
+.something-new .keywords button {
+    outline: 1px solid #333;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 50px;
+}
+
+/* Footer Styles */
+footer {
+    padding: 40px 100px;
+}
+.footer-main {
+    padding: 20px;
+    border-top: 1px solid #333;
+    align-items: flex-start;
+}
+.footer-main:first-child p {
+    text-align: center;
+}
+.footer-main article {
+    width: 25%;
+    padding-left: 5px;
+    height: 100%;
+}
+.footer-main hr {
+    border: 1px solid #333;
+}
+.footer-main article li {
+    margin: 8px 0;
+}
+.footer-main li {
+    margin-left: 10px;
+}
+.footer-main img {
+    width: 20px;
+    height: 20px;
+}
