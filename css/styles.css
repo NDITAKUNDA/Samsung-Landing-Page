@@ -27,10 +27,7 @@
     display: flex;
     align-items: center;
 }
-.justify-center{
-    display: flex;
-    justify-content: center;
-}
+
 .flex-row {
     flex-direction: row;
 }
@@ -62,12 +59,24 @@ a.buy-btn {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.bg-images{
+    width: 90%;
+    height: 400px;
+    margin: 10px auto;
+    background-size: contain;
+}
 .mobile-buttons {
     margin-top: 15px;
 }
 .mobile-buttons a {
     margin: 15px;
     padding: 10px 20px;
+}
+ a.learn-more-btn {
+    color: #000000;
+    padding-bottom: 4px;
+    border-bottom-width: 50%;
+    border-bottom: 2px solid #000000;
 }
 
 /* NAVIGATION BAR STYLES */
@@ -211,44 +220,19 @@ div.carousel-5 div.hero-buttons a:first-child {
     text-align: center;
 }
 .mobile-computing .mobile-image {
-    width: 90%;
-    height: 400px;
-    margin: 10px auto;
-    background-size: contain;
     background-image: url("../assets/backgrounds/mobile.png");
 }
-.mobile-computing .mobile-buttons a.learn-more-btn {
-    color: #000000;
-    padding-bottom: 4px;
-    border-bottom-width: 50%;
-    border-bottom: 2px solid #000000;
-}
+
 
 /*TV and Audio Secion*/
 .tv-and-audio{
     padding:40px 100px;
+    text-align: center;
 }
 .tv-and-audio-image {
-    width: 90%;
-    height: 400px;
     background-image: url("../assets/backgrounds/tvandaudio.png");
-    background-size: contain;
-    margin: 10px auto;
 }
-.text-align{
-    text-align: center;
-}
-.buy-button {
-    text-align: center;
-    margin-top: 15px;
-    margin: 15px;
-    padding:  25px;
-    padding-bottom: 12px;
-    padding-top: 12px;
-    background-color: #000000;
-    color: #f2f2f2;
-    border-radius: 50px;
-}
+
 
 /* Home Appliance Section */
 .home-appliances {
@@ -256,27 +240,16 @@ div.carousel-5 div.hero-buttons a:first-child {
     text-align: center;
 }
 .home-appliances-image {
-    width: 90%;
-    height: 400px;
-    margin: 10px auto;
-    background-size: contain;
     background-image: url("../assets/backgrounds/homeappliances.png");
 }  
 
 /*sustainability*/
 .sustainability {
-    padding: 40px 100px
+    padding: 40px 100px;
+    text-align: center;
 }
 .sustainability-image{
-    width: 90%;
-    height: 400px;
-    background-image: url("../assets/backgrounds/sustainability.png");
-    background-size: contain;
-    margin: 10px auto;
-    
-}
-a.learn-more-btn{
-    color: black;
+    background-image: url("../assets/backgrounds/sustainability.png");  
 }
 
 /* Never Miss a thing */
@@ -299,14 +272,10 @@ a.learn-more-btn{
 
 /* Collector Creative */
 .creator-collective {
-    padding: 0px 100px;
+    padding: 40px 100px;
 }
 .creator-collective-image {
-    margin: 0 auto;
-    width: 1000px;
-    height: 600px;
-    background-image: url("../assets/backgrounds/creator-collective.png");
-    background-size: contain;
+    background-image: url("../assets/backgrounds/creator-collective.png");  
 }
 
 /* Something New Styles */
