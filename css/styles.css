@@ -69,6 +69,13 @@ a.buy-btn {
     margin: 15px;
     padding: 10px 20px;
 }
+/* Refactoring the css code by combining similar properties */
+.padding-40-100 {
+    padding: 40px 100px;
+}
+.text-align-center {
+    text-align: center;
+}
 
 /* NAVIGATION BAR STYLES */
 nav {
@@ -165,7 +172,6 @@ div.carousel-5 div.hero-buttons a:first-child {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    text-align: center;
 }
 .toggle-btn#prev-btn {
     left: 20px;
@@ -188,7 +194,6 @@ div.carousel-5 div.hero-buttons a:first-child {
     font-size:38px;
     line-height: 45.6px;
     position: relative;
-    text-align: center;
 }
 .container{
     display: grid;
@@ -206,10 +211,6 @@ div.carousel-5 div.hero-buttons a:first-child {
 
 
 /* Mobile & Computing Section */
-.mobile-computing {
-    padding: 40px 100px;
-    text-align: center;
-}
 .mobile-computing .mobile-image {
     width: 90%;
     height: 400px;
@@ -224,10 +225,7 @@ div.carousel-5 div.hero-buttons a:first-child {
     border-bottom: 2px solid #000000;
 }
 
-/*TV and Audio Secion*/
-.tv-and-audio{
-    padding:40px 100px;
-}
+/* TV and Audio Section */
 .tv-and-audio-image {
     width: 90%;
     height: 400px;
@@ -235,11 +233,7 @@ div.carousel-5 div.hero-buttons a:first-child {
     background-size: contain;
     margin: 10px auto;
 }
-.text-align{
-    text-align: center;
-}
 .buy-button {
-    text-align: center;
     margin-top: 15px;
     margin: 15px;
     padding:  25px;
@@ -251,10 +245,6 @@ div.carousel-5 div.hero-buttons a:first-child {
 }
 
 /* Home Appliance Section */
-.home-appliances {
-    padding: 40px 100px;
-    text-align: center;
-}
 .home-appliances-image {
     width: 90%;
     height: 400px;
@@ -264,25 +254,18 @@ div.carousel-5 div.hero-buttons a:first-child {
 }  
 
 /*sustainability*/
-.sustainability {
-    padding: 40px 100px
-}
 .sustainability-image{
     width: 90%;
     height: 400px;
     background-image: url("../assets/backgrounds/sustainability.png");
     background-size: contain;
-    margin: 10px auto;
-    
+    margin: 10px auto; 
 }
 a.learn-more-btn{
     color: black;
 }
 
 /* Never Miss a thing */
-.never-miss-a-thing {
-    padding: 40px 100px;
-}
 .never-miss-a-thing .buy-button {
     margin-left: 0;
 }
@@ -294,7 +277,6 @@ a.learn-more-btn{
 } 
 .never-miss-a-thing h2:last-child {
     margin-top: 8px;
-    text-align: center;
 }
 
 /* Collector Creative */
@@ -310,12 +292,6 @@ a.learn-more-btn{
 }
 
 /* Something New Styles */
-.something-new {
-    padding: 40px 100px;
-}
-.something-new h2 {
-    text-align: center;
-}
 .something-new input {
     margin: 15px auto;
     padding: 20px 50px;
@@ -336,16 +312,10 @@ a.learn-more-btn{
 }
 
 /* Footer Styles */
-footer {
-    padding: 40px 100px;
-}
 .footer-main {
     padding: 20px;
     border-top: 1px solid #333;
     align-items: flex-start;
-}
-.footer-main:first-child p {
-    text-align: center;
 }
 .footer-main article {
     width: 25%;

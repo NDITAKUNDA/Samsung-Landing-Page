@@ -1,77 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Horizontal Carousel</title>
-<style>
-  .carousel-container {
-    width: 80%; /* Adjust width as needed */
-    overflow: hidden;
-    margin: 0 auto;
-  }
-  .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  .carousel-item {
-    flex: 0 0 auto;
-    width: 100%; /* Adjust width as needed */
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page | Samsung</title>
+  <!-- Link to the stylesheets -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/screens.css">
+  <link rel="stylesheet" href="./css/tablet.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+
+  <!-- Link for the font to be used -->
+  <link href="https://fonts.cdnfonts.com/css/samsung-sans-4" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/samsung-sharp-sans" rel="stylesheet">
 </head>
+
 <body>
+  <div class="main-container"></div>
 
-<div class="carousel-container">
-  <div class="carousel-track">
-    <div class="carousel-item current-slide" style="background-color: #ff9999;">Slide 1</div>
-    <div class="carousel-item" style="background-color: #99ff99;">Slide 2</div>
-    <div class="carousel-item" style="background-color: #9999ff;">Slide 3</div>
-    <div class="carousel-item" style="background-color: #ffff99;">Slide 4</div>
-  </div>
-</div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const carouselData = [
+        {
+          classes: "flex carousel-item bg-cover carousel-6",
+          title: "Gifted and Talented",
+          description: "The new Samsung Neo QLED QN90C delivers pristine contrast, color and design,rewarding you at every glance.",
+          buttons: [{ text: "Buy Now", href: "/index.html" }]
+        },
+        {
+          classes: "flex carousel-item bg-cover carousel-5",
+          title: "Get up to $600 instant trade-in credit",
+          description: "Toward Galaxy Book3 Ultra. Cracked screen? No problem. Get up to $135 instant cracked screen trade-in credit.",
+          buttons: [
+            { text: "Learn More", href: "/index.html" },
+            { text: "Buy Now", href: "/index.html", additionalClass: "black" }
+          ]
+        },
+        {
+          classes: "flex carousel-item bg-cover carousel-4",
+          title: "Save up to $400 with Spring Cleaning Savings",
+          description: "Welcome spring with big savings on select Jet vacuums to give your home a stylish, smart upgrade.",
+          buttons: [{ text: "Shop now", href: "/index.html", additionalClass: "black" }]
+        },
+        {
+          classes: "flex carousel-item bg-cover current-slide carousel-1",
+          title: "Save up to $850 with select Galaxy S23 Ultra",
+          description: "Get up to $750 instant trade-in credit, $100 instant Samsung Credit and 50% off 1 year of Samsung Care+.",
+          buttons: [
+            { text: "Learn More", href: "/index.html" },
+            { text: "Buy Now", href: "/index.html" }
+          ]
+        },
+        {
+          classes: "flex carousel-item bg-cover carousel-2",
+          title: "Save up to $900 with Galaxy S23 Ultra",
+          description: "Via trade-in bill credits. Terms apply. Get $100 instant Samsung Credit and 50% off 1 year of Samsung Care+.",
+          buttons: [{ text: "Buy Now", href: "/index.html", additionalClass: "black" }]
+        },
+        {
+          classes: "flex carousel-item bg-cover carousel-3",
+          title: "Bundle and Save up to $1000",
+          description: "Get a select Bespoke Ultra Capacity Washer and Dryer Set. From $2,198 $3,298. Save up to 20% of your household energy bill with our ENERGY STAR certified products.",
+          buttons: [{ text: "Buy Now", href: "/index.html", additionalClass: "black" }]
+        }
+      ];
 
-<script>
-  const track = document.querySelector('.carousel-track');
-  const slides = Array.from(track.children);
-  const slideWidth = slides[0].getBoundingClientRect().width;
+      const carouselTrack = document.createElement('div');
+      carouselTrack.className = 'carousel-track';
 
-  // Arrange slides horizontally
-  const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-  };
-  slides.forEach(setSlidePosition);
+      carouselData.forEach(item => {
+        const carouselItem = document.createElement('div');
+        carouselItem.className = item.classes;
 
-  // Next and previous buttons
-  const nextButton = document.createElement('button');
-  nextButton.textContent = 'Next';
-  nextButton.addEventListener('click', () => {
-    const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling;
-    const amountToMove = nextSlide.style.left;
-    track.style.transform = 'translateX(-' + amountToMove + ')';
-    currentSlide.classList.remove('current-slide');
-    nextSlide.classList.add('current-slide');
-  });
+        const innerDiv = document.createElement('div');
 
-  const prevButton = document.createElement('button');
-  prevButton.textContent = 'Prev';
-  prevButton.addEventListener('click', () => {
-    const currentSlide = track.querySelector('.current-slide');
-    const prevSlide = currentSlide.previousElementSibling;
-    const amountToMove = prevSlide.style.left;
-    track.style.transform = 'translateX(-' + amountToMove + ')';
-    currentSlide.classList.remove('current-slide');
-    prevSlide.classList.add('current-slide');
-  });
+        if (item.title) {
+          const h2 = document.createElement('h2');
+          h2.className = 'font-samsung-sharp';
+          h2.textContent = item.title;
+          innerDiv.appendChild(h2);
+        }
 
-  // Append buttons to the carousel container
-  const carouselContainer = document.querySelector('.carousel-container');
-  carouselContainer.appendChild(nextButton);
-  carouselContainer.appendChild(prevButton);
+        const pDescription = document.createElement('p');
+        pDescription.className = 'font-samsung-sans';
+        pDescription.textContent = item.description;
+        innerDiv.appendChild(pDescription);
 
-</script>
+        const heroButtons = document.createElement('div');
+        heroButtons.className = 'hero-buttons';
+
+        item.buttons.forEach(button => {
+          const a = document.createElement('a');
+          a.className = 'font-samsung-sans';
+          if (button.additionalClass) {
+            a.classList.add(button.additionalClass);
+          }
+          a.href = button.href;
+          a.textContent = button.text;
+          heroButtons.appendChild(a);
+        });
+
+        innerDiv.appendChild(heroButtons);
+        carouselItem.appendChild(innerDiv);
+        carouselTrack.appendChild(carouselItem);
+      });
+
+      document.querySelector('.main-container').appendChild(carouselTrack);
+    });
+
+  </script>
 
 </body>
-</html>
 
+</html>
