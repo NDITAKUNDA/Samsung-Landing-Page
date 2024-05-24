@@ -61,6 +61,9 @@
     }
 
     /* footer styles */
+    footer.padding-40-100 {
+        padding: 20px;
+    }
     footer p {
         text-align: left;
     }

@@ -311,3 +311,9 @@ div.carousel-5 div.hero-buttons a:first-child {
     width: 20px;
     height: 20px;
 }
+.developer-links p {
+    color: #333;
+}
+.developer-links a {
+    color: #000000;
+}
